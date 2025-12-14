@@ -1,0 +1,242 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+    .carousel img {
+      object-fit: cover;
+      height: 80vh;
+    }
+nav{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    z-index: 500;
+    display: flex;
+    justify-content: space-between;
+}
+nav img {
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+a {
+    
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+nav .nav-link:hover {
+    color: #00b7ffd2 !important; /* BMW-style blue on hover */
+     transition: color 0.4s ease-in-out;
+}
+nav .nav-link.active {
+    color: #00b7ffd2 !important; /* BMW-style blue for active link */
+}
+.opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.568); /* Semi-transparent black */
+  z-index: 400;
+  box-shadow: inset 0 0 50px 28px rgb(0, 0, 0);/* Optional shadow for depth */
+}
+.line{
+    height: 5px;
+    background-color: rgba(51, 50, 50, 0.842);
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    z-index: 300;
+    
+}
+.carousel-caption {
+    color: white;
+    align-self: center;
+    text-align: center;
+   text-shadow: 2px 2px 8px #816868;
+    border-radius: 5px;
+    z-index: 500;
+}
+.carousel-caption h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.carousel-caption p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.card {
+  height:fit-content;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: rgb(240, 233, 233);
+
+}
+.card-body{
+  width: 100%;
+    padding: 20px;
+    text-align: center;
+
+}
+.card img, .card video {
+     object-fit: cover; 
+     width: 100%;
+      height: 350px;
+     
+}
+#services {
+  
+  padding: 50px 0;
+}
+
+
+#services .card-body img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  z-index: 1000;
+}
+#services h2 {
+  font-weight: bold;
+  font-size: 36px;
+  z-index: 1000;
+color: #ffffff;
+}
+#services .card-title {
+  margin-top: 10px;
+  font-size: 20px;
+  z-index: 1000;
+}
+#services .card-text {
+  font-size: 15px;
+  color: #555;
+  z-index: 1000;
+}
+
+/* Media query for mobile */
+@media (max-width: 668px) {
+  .menu-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    align-self: flex-end;
+  }
+
+  #nav-links {
+    display: none;
+    background-color: #000;
+    width: 40%;
+
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+
+  #nav-links.active {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-top: 1px solid #444;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .nav-link:hover {
+    background-color: #0e97f3c2;
+  }
+  .carousel {
+    width: 100vw;
+    height: 60vh; /* Adjust height for mobile */
+  }
+  .carousel img {
+    height: 60vh; /* Adjust height for mobile */
+    width: 100vw; /* Ensure full width */
+  }
+  
+  .carousel-caption h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.carousel-caption p {
+  display: none;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.card {
+  height:300px;
+    width: 80%;
+    margin:  auto;
+    border-radius: 10px;
+    overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: rgb(240, 233, 233);
+
+}
+.card-body{
+  width: 100%;
+  height: 150px;
+    padding: 20px;
+    text-align: center;
+
+}
+.card img, .card video {
+     object-fit: cover; 
+     width: 100%;
+      height: 150px;
+     
+}
+
+
+
+
+ 
+}
+
+
+
